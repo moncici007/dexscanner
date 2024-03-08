@@ -1,7 +1,8 @@
-import path from 'path';
 import axios from 'axios';
 import { formatTimestamp } from '@moncici/date-time-processor';
-import { sleep, log } from '../util/util.js';
+import { sleep } from '@moncici/sleep';
+import { log } from '@moncici/log';
+import { notify } from 'feishu-notifier';
 
 export async function getPriceByToken(tokenAddreses) {
   const pairs = await getPairs(tokenAddreses);
@@ -34,6 +35,7 @@ export async function getPairs(tokenAddreses) {
       }
     } catch(error) {
       log(`error: `, error);
+      notify('BUY', error);
       return [];
       // throw error; // 将错误向上抛出
     }

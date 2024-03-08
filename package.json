@@ -1,6 +1,6 @@
 {
   "name": "@moncici/dexscanner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "dexscanner",
   "main": "dex_scan.js",
   "scripts": {

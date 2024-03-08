@@ -1,0 +1,34 @@
+{
+  "name": "@moncici/dexscanner",
+  "version": "1.0.3",
+  "description": "dexscanner",
+  "main": "dex_scan.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moncici007/dexscanner"
+  },
+  "website": "https://github.com/moncici007/dexscanner.git",
+  "keywords": [
+    "feishu",
+    "notify",
+    "nodejs"
+  ],
+  "author": "moncici007",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moncici007/dexscanner/issues"
+  },
+  "homepage": "https://github.com/moncici007/dexscanner#readme",
+  "dependencies": {
+    "@moncici/log": "^1.0.2",
+    "dotenv": "^16.4.5",
+    "https": "^1.0.0",
+    "@moncici/proxy": "^1.0.3",
+    "@moncici/sleep": "^1.0.1",
+    "feishu-notifier": "^1.0.3"
+  },
+  "type": "module"
+}
